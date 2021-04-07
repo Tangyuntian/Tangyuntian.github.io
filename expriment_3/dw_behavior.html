@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	width:132px;
+	height:65px;
+	z-index:1;
+	left: 48px;
+	top: 17px;
+}
+#apDiv2 {
+	position:absolute;
+	width:155px;
+	height:85px;
+	z-index:2;
+	left: 484px;
+	top: 13px;
+}
+</style>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+function MM_effectGrowShrink(targetElement, duration, from, to, toggle, referHeight, growFromCenter)
+{
+	Spry.Effect.DoGrow(targetElement, {duration: duration, from: from, to: to, toggle: toggle, referHeight: referHeight, growCenter: growFromCenter});
+}
+function MM_effectHighlight(targetElement, duration, startColor, endColor, restoreColor, toggle)
+{
+	Spry.Effect.DoHighlight(targetElement, {duration: duration, from: startColor, to: endColor, restoreColor: restoreColor, toggle: toggle});
+}
+</script>
+</head>
+
+<body>
+<div id="apDiv1" onclick="MM_openBrWindow('http://www.njust.edu.cn/','','')" onmouseover="MM_effectHighlight('apDiv1', 1000, '#ffffff', '#FF0000', '#0000FF', true)">南京理工大学</div>
+<div id="apDiv2" onclick="MM_openBrWindow('https://www.tsinghua.edu.cn/','','')" onmouseover="MM_effectGrowShrink('apDiv2', 1000, '100%', '150%', true, false, true)">清华大学</div>
+</body>
+</html>
