@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>简易计算器</title>
+    </head>
+    <body background="，.jpg" style="background-repeat: no-repeat;margin-left: 10px;">
+
+        <h1>简易计算器</h1>
+        <p>
+            <input  type="text" id="num1"/>
+            <input type="button" value="计算" onclick="cal()" />
+        </p>
+        <p>
+            <span id="result" style="color: #FF0000;">计算结果：</span>
+        </p>
+    </body>
+    <script type="text/javascript">
+        function cal(){
+            var num1=document.getElementById("num1").value;
+            var result=document.getElementById("result");
+            try{
+                var res=eval("("+num1+")");
+                result.innerHTML=res;
+            }catch(e){
+                console.log(e);
+                result.innerHTML="表达式异常";
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,29 @@
+
+<!doctype html>
+
+<html>
+<head>
+		  <img src="fg.gif" width="546" height="242" alt=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>简单减法计算</title>
+
+<script language=javascript>
+
+  var go_on,x,y,result,answer;
+  do {
+     x = Math.floor(Math.random() *90)+10;
+     y = Math.floor(Math.random() *90)+10;
+     result = x-y;
+     answer = parseFloat(prompt(x + "-" + y + "=","0"));
+     go_on = confirm(((answer==result)?"恭喜答对":"错了，小傻瓜") +"！\t继续测试吗?")
+  }while(go_on)
+
+  
+</script> 
+
+
+</head>
+
+<body>
+</body>
+</html>
