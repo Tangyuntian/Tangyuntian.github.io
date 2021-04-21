@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.0.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div=$("div");  
+    div.animate({left:'100px'},"fast");
+    div.animate({fontSize:'3em'},"slow");
+  });
+});
+</script> 
+</head>
+
+<body>
+
+<button>开始动画</button>
+<div style="background:#98bf21;height:100px;width:200px;position:absolute;">你好</div>
+
+</body>
+</html>
